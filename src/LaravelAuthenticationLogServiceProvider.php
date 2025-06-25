@@ -2,11 +2,11 @@
 
 namespace Rappasoft\LaravelAuthenticationLog;
 
-use Illuminate\Support\Facades\Event;
 use Illuminate\Auth\Events\Failed;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Auth\Events\OtherDeviceLogout;
+use Illuminate\Support\Facades\Event;
 use Rappasoft\LaravelAuthenticationLog\Commands\PurgeAuthenticationLogCommand;
 use Rappasoft\LaravelAuthenticationLog\Listeners\FailedLoginListener;
 use Rappasoft\LaravelAuthenticationLog\Listeners\LoginListener;
